@@ -1,33 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer utilities{
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.flexx{
+  @apply flex flex-row justify-center items-center
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.sm-flex{
+ @apply max-sm:flex-col
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+
+}
+ body{
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
+ }
+
+.poppins{
+font-family: var(--font-poppins);
+
+}
+.roboto{
+font-family: var(--font-roboto);
+
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.loading{
+width: 50px;
+height: 50px;
+border: 2px solid white;
+border-radius: 50%;
 }

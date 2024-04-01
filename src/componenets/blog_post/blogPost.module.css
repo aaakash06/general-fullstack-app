@@ -1,0 +1,45 @@
+.post 
+{
+  /* width: 100%; */
+  height: 400px;
+/* border: 2px solid white; */
+flex-direction: column;
+display: flex;
+
+}
+.ImageContainer{
+  position: relative;
+width:  90%;
+height: 100%;
+
+}
+.img{
+  object-fit: contain;
+}
+
+
+.top{
+flex: 2.5;
+position: relative;
+/* background-color: blue; */
+}
+.bottom{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 5px;
+}
+.desc{
+  color: #585656;
+}
+.read{
+text-decoration: underline;
+
+}
+.spanCont{
+  position:  absolute;
+right: -20px;
+top: 130px;
+  transform: rotateZ(270deg);
+}
